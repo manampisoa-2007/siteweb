@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title> les avantages de l'environnement propre et structuré</title>
+  <style>
+  
+  
+  body{
+    background: white;
+    font-size: bold 15px;
+    margin: 50px;
+  }
+  img{
+    width: 850px;
+    height:550px;
+    border-radius: 10%;
+    box-shadow: 15px 15px 10px orange;
+    
+  }
+  
+#titr{
+    background:green;
+    width:100%;
+    height:200px;
+    position:fixed;
+    top:0;
+    left:0;
+}
+
+#titre{
+    color:white;
+    text-align:center;
+    font-size:60px;
+    animation:couleur 10s infinite;
+}
+
+@keyframes couleur{
+    25%{color:yellow;}
+    50%{color:cyan;}
+    75%{color:aqua;}
+}
+
+  </style>
+</head>
+<body>
+  <div id="titr">
+    <h1 id="titre">ENVIRONNEMENT ET LA SANTÉ</h1>
+</div>
+
+<br><br><br><br>
+  <p id="avant"></p>
+  <dd><h2 id="h21" style="color:red"> pour la santé et l'economie:</h2></dd>
+    <p>
+      Un environnement propre et structuré est très important pour la vie humaine. Il permet d’avoir un air pur et une eau propre.
+      <br>Les personnes vivant dans l'endroit calme et structuré restent sain dans la vie,car l'endroit dont l'air est pur et l'eau propre rien des maladies dans la pollution comme la maladie respiratoire,la cholera,la diarrhé,...etc.,
+      <br>Ils ont des bonne mentelité et bonne memoire,
+      car l'environnement calme et structuré entraine d'intelligence memoire et de developpement normal du connaissance.
+      <br>Les arbres sont enrichit d'oxygène grâce à leur photosynthèses.Les plantes et les petites espèces des animaux sont vivent mieux dans un milieu propre.
+      <br>Les endroit propres et structureé attire des tourismes et des investisseurs.
+      <br>Les differentes types des plantes fruitier donner les differents valeurs nitritives
+    </p>
+      <dd><h2 id="h21" style="color: red">Pour la végétation et climat</h2></dd>
+    <p>
+      L'environnement tienne des rôles important pour la climat et végétation,
+      <br>ils sont reduire les gaz carboniques dans l'athmosphère pour y notre planète a respirable,
+      <br>l'environnement structuré est équilibré et amelioré le climat
+      <br>Les plantes vertes attire le pluie grâce à la cycle de l'eau.La cycle de l'eau c'est comme les schema ci-dessous:
+      <p><img src="cycled'eau.png" id="cicle"></p>
+      La fonctionnement de la cycle de l'eau:
+      <br>Il se fait cinq(5) cycles:
+      <li><b id="1er">L'ÉVAPORATION:</b></li>
+      le soleil chauffe l'eau des océans,des lacs,des rivières et les plante vertes,du coup,l'eau s'évapore et se transforme en vapeur d'eau.
+      <li><b id="1er">LA CONDANSATION : </b></li>
+      La vapeur d'eau pendant <strong>l'évaporatin</strong> se monte et ascendant vers le ciel,
+      sous l'action de l'air froid de la ciel,elle se refroidir et s transforme en nuages.
+      <li><b>LA PRÉCIPITATIONS : </b></li>
+      Si les gouttelettes devient trés lourdes,ils sont retombés sur Terre sous forme des pluie,des neiges ou des grêles.
+      <li>Aprés ces trois étapez certain eau se deshydrate vers les sous sols et la racine des plantes les absorbent,
+        <br>certain eau s'écoule dans la surface du sol et 
+        rejoit vers les lacs ou océan ou des rivières.
+        <li>l'autre cycle se récommence,ainsi de suite</li>
+      
+  <script>
+  let avant="L'environnement propre et structuré presente des avantages sur la vie humaine.  Dans cette partie, nous allons voir ces avantages sur deux sections,";
+  let zone=document.getElementById("avant");
+  let k=0;
+  function soraty(){
+    if(k<avant.length){
+      zone.textContent+=avant[k];
+      k++;
+      setTimeout(soraty,90);
+    }
+    else{
+      setTimeout(()=>{
+      zone.style.transition="opacity 2s";
+      zone.style.opacity="0";
+      setTimeout(()=>{
+        zone.style.display="none";
+      },3000)
+    },4000)
+  }
+ }
+  soraty();
+  </script>
+</body>
+</html>

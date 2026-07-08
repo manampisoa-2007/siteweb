@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title>les consequence de ces destruction</title>
+  <style>
+  body{
+  background-color: white;
+  margin: 20px;
+}
+h1{
+  font-size: 30px;
+}
+#bobot{
+  background-color: cyan;
+  padding: 30px;
+  
+}
+#dev{
+  background-color: ;
+  align-content: center;
+
+}
+#leo{
+  padding: 10px 20px 3px 20px;
+}
+
+
+  </style>
+</head>
+<body>
+   <div id="bobot"><h1 id="conseque"></h1></div>
+  <script src="conse.js"></script>
+  <div id="dev">
+    <p id="leo">Il y a plusieurs conséquences de la déstruction de l'environnement.
+      <br>chaque causes et chaque activités humaines ayants des effets sur la santé:
+      <dd><li>La déforestation entraine la disparition   des arbres,en effet<b>la quantitée de l'oxygènes se reduire</b></li></dd>
+      <dd><li>Les pollutions de l'air entraine <em>les maladie respiratoires</em>,exemple: stresse, l'asthme.
+        <br>Et les fumées entrainent la rechauffement climatique.</li></dd>
+      <div id="ero"><dd><li>Les élements contaminées par les produit chimique sont dangereux pour le cherveau et les organes de l'organisme</li></dd>
+      <dd><li>Les pollutions de l'eau entrainent la développement facile la maladie comme 
+        le tuberculose,les moustiques se déveeloppent dans les eau sales et trensmettent le paludisme</li></dd>
+      <dd><li>Les enfants et les personnes agées sont fragiles et vulnérablement dévant les maladies et les changements climatiques. </li></dd>
+      </div>
+    </p>
+  </div>
+  <script>
+  
+  var olga="LES CONSEQUENCES DE LA DESTRUCTION DE L'ENVIRONNEMENT";
+let x=0;
+function manampy(){
+    if(x<olga.length){
+        document.getElementById("conseque").innerHTML+=olga[x];
+        x++;
+        setTimeout(manampy, 50);
+    }
+}
+manampy();
+
+
+  </script>
+</body>
+</html>

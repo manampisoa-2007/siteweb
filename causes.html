@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title>cause des destructions de l'environnement</title>
+  <style>
+  body{
+  background-color: burlywood;
+  margin: 20px;
+  align-items: center;
+  line-height: normal;
+}
+h1{
+  color: black;
+  font-size: 50px;
+  padding: 10px 10px 10px 10px;all: 
+}
+#toto{
+  background-color: chocolate;
+  padding: 5px 10px 5px 40px;
+  
+}
+#cause{
+  background-color: darkcyan;
+  padding: 0px 30px 5px 30px;
+  word-spacing: 5px;
+}    
+  </style>
+</head>
+<body>
+ 
+<body>
+  <div id="toto">
+ <h1 id="prati">    </h1>
+  </div>
+  <div id="cause">
+    <p>Aujourd'hui , l'environnement est gravement menacé par les activités humaines.
+      <br>On va citer ci-dssous les activités de l'homme qui detruit l'environnement:
+      <li><b>La déforestation:</b></li> c'est la déstruction des forêts pour 
+      construire en besoins matériels,exemple:
+        constructions des meubles comme le table , chaise , etc.8
+      <li><b>Dans les grandes usines:</b></li>
+      Ils rejettent des gaz toxiques dans l'air , rejettent des fumées , même que les differents
+      <br>transports comme les voitures , les motos , etc.
+      <li>Les produits chimiques utilisées dans l'agriculture contamine l'eau car ils sont tuer les petites espèces dans les sols </li>
+      <li>La croissances rapide de la population augmente les besoins en resources naturels  </li>
+      
+    </p>
+  </div>
+  <script>
+var message="les causes de la déstruction de l'environnement";
+let x=0;
+function afficher(){
+    if(x<message.length){
+        document.getElementById("prati").innerHTML+=message[x];
+        x++;
+        setTimeout(afficher, 60);
+    }
+}
+afficher();
+  </script>
+</body>
+</html>
